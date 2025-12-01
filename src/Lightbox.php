@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Grid\Lightbox;
+namespace Ladmin\Grid\Lightbox;
 
-use Encore\Admin\Extension;
+use Ladmin\Extension;
 
 class Lightbox extends Extension
 {
     public $name = 'grid-lightbox';
 
-    public $assets = __DIR__.'/../resources/assets';
+    public $assets = __DIR__ . '/../resources/assets';
 }

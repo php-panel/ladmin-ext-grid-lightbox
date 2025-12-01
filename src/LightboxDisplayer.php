@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Grid\Lightbox;
+namespace Ladmin\Grid\Lightbox;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Grid\Displayers\AbstractDisplayer;
+use Ladmin\Admin;
+use Ladmin\Grid\Displayers\AbstractDisplayer;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
@@ -50,7 +50,7 @@ SCRIPT;
         $height = Arr::get($options, 'height', 200);
         $class = Arr::get($options, 'class', 'thumbnail');
         $class = collect((array)$class)->map(function ($item) {
-            return 'img-'. $item;
+            return 'img-' . $item;
         })->implode(' ');
 
         if (Arr::get($options, 'zooming')) {

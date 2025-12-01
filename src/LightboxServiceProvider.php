@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Grid\Lightbox;
+namespace Ladmin\Grid\Lightbox;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Grid\Column;
+use Ladmin\Admin;
+use Ladmin\Grid\Column;
 use Illuminate\Support\ServiceProvider;
 
 class LightboxServiceProvider extends ServiceProvider
@@ -14,7 +14,7 @@ class LightboxServiceProvider extends ServiceProvider
     public function boot(Lightbox $extension)
     {
         if (! Lightbox::boot()) {
-            return ;
+            return;
         }
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
